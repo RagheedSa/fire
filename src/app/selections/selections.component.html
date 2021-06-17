@@ -1,0 +1,27 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+
+<article>
+  <h2>
+    Choose System  </h2>
+    
+
+  <!-- <h1> Cards</h1> -->
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutAlign="space-around center "fxLayoutGap="25px">
+    <mat-card *ngFor="let member of members" fxFlex="calc(33% - 40px)" fxFlex.sm="calc(50%-25px)">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title style="font-size: larger;">{{member.title}}</mat-card-title>
+        <mat-card-subtitle>{{member.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="member.url" alt="Photo of {{member.title}}">
+      <mat-card-content>
+        <input type="submit" value="Enter" routerLink="/menu" class="w3-button w3-gray w3-display-bottommiddle" >
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+  <br>
+</article>

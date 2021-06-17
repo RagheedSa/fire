@@ -1,0 +1,143 @@
+
+form,
+input,
+select,
+textarea,
+p {
+  margin: 10px;
+  padding: 10px 10px;
+  box-sizing: 100px;
+}
+
+h1 {
+  font-weight: 400;
+
+}
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding-left: 3%;
+  align-content: center;
+  width: 900px;
+}
+form {
+  width: 100%;
+padding-left: 120px;
+  background: #d6e8e9c0;
+  box-shadow: 0 2px 5px #ccc;
+
+}
+input,
+select,
+textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+  box-sizing: 100px;
+}
+input:hover,
+select:hover,
+textarea:hover {
+  outline: none;
+  box-shadow: 0 0 5px 0 #095484;
+  box-sizing: 100px;
+}
+input {
+  width: 160px;
+  padding: 5px;
+  text-align: center;
+}
+select {
+  width: 100%;
+  padding: 7px 0;
+  background: transparent;
+  text-align: center;
+}
+textarea {
+  width: calc(100% - 2px);
+  padding: 5px;
+  box-sizing: 200px;
+}
+.item {
+  position: relative;
+  box-sizing: 100px;
+  text-align: center;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  box-shadow: 0 0 5px 0 #095484;
+  box-sizing: 100px;
+}
+.status:hover input {
+  box-shadow: none;
+}
+.status label:hover input {
+  box-shadow: 0 0 5px 0 #095484;
+}
+.status-item input,
+.status-item span {
+  width: 160px;
+  vertical-align: middle;
+}
+.status-item input {
+  margin: 0;
+}
+.status-item span {
+  margin: 0 20px 0 5px;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type="time"]::-webkit-inner-spin-button {
+  margin: 2px 22px 0 0;
+}
+.item i,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  font-size: 20px;
+  color: #a9a9a9;
+}
+.item i {
+  right: 1%;
+  top: 30px;
+  z-index: 1;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.btn-block {
+  margin-top: 20px;
+}
+button {
+  width: auto;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #095484;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+button:hover {
+  background-color: #0666a3;
+}
+
+.name-item input {
+  width: 160px;
+  text-align: center;
+}
+.da {
+  width: 100px;
+  height: 20px;
+}

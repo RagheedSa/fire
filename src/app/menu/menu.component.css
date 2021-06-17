@@ -1,0 +1,85 @@
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family:"Raleway", sans-serif;
+  margin: 0;
+
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(113, 134, 252);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:"Raleway", sans-serif;
+
+  
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  font-family:"Raleway", sans-serif;
+
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(29, 20, 20);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family:"Raleway", sans-serif;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:  #d6e8e9c0;
+  font-family:"Raleway", sans-serif;
+
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #d6e8e9c0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+div.wide {
+  width: 200px;
+  height: 100px;
+  border-radius:5px;
+}
+div.tall {
+  width: 100px;
+  height: 200px;
+  border-radius:5px;
+}

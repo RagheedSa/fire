@@ -1,0 +1,89 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+<style>
+  body,
+  h1,
+  h5 {
+    font-family: "Raleway", sans-serif;
+  }
+  body,
+  html {
+    height: 100%;
+  }
+</style>
+<body>
+  <div class="container">
+    <img
+    class="img-responsive" src="assets/Alattar.jpg"
+      width="100%"
+      height="700"
+      style="
+
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.6);
+        background-blend-mode: lighten;
+      "
+    />
+
+    <div >
+      
+
+      <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-bottomright w3-jumbo"></div>
+        <div class="w3-display-bottomright w3-container w3-xlarge">
+          <p>
+            <button
+              onclick="document.getElementById('login').style.display='block'"
+              class="w3-button w3-blue-gray w3-display-bottomright"
+            >
+              login
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- login Modal -->
+  <div id="login" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-white w3-display-container">
+        <span
+          onclick="document.getElementById('login').style.display='none'"
+          class="w3-button w3-display-topright w3-large"
+          >x</span
+        >
+        <h1>Login page</h1>
+      </div>
+      <div class="w3-container w3-blue-gray">
+        <br />
+        <div class="a">
+          <form (submit)="loginUser($event)">
+            <br />
+
+            <input type="text" placeholder="Username" id="username" />
+            <br />
+            <br />
+
+            <input type="password" placeholder="Password" id="password" />
+            <br />
+            <br />
+            <button
+              onclick="document.getElementById('login').style.display='block'"
+              routerLink="/selections"
+              class="w3-button w3-gray"
+            >
+              login
+            </button>
+
+            <br />
+            <br />
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
